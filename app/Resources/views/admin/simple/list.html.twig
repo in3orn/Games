@@ -84,7 +84,7 @@
 		{% set hidden="" %}
 	{% endif %}
 	
-	<li>
+	<li class="{{ hidden }}">
 		{{ form_widget(form.new, { 'icon': 'fa-file-o', 'label': 'action.new', 'attr': {'class': 'btn btn-success', 'type': 'button'} }) }}
 	</li>
 	<li>
