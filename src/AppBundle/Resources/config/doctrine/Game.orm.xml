@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+        http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="AppBundle\Entity\Game" table="games"
+        repository-class="AppBundle\Repository\GameRepository">
+        
+        <field name="vPlayId" type="integer" nullable="false" />
+        
+        <one-to-many field="subscriptions" target-entity="Subscription" mapped-by="game">
+        </one-to-many>
+    </entity>
+    
+</doctrine-mapping>

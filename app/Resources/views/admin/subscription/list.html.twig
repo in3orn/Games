@@ -1,0 +1,14 @@
+{% extends 'admin/simple/list.html.twig' %}
+
+{% set mainPath = '_subscription' %}
+{% set extPath = '' %}
+
+{% set title = 'label.subscriptions'|trans %}
+
+{% block headerMoreFields2 %}
+	<th><i class="fa fa-"></i> {{ 'label.subscription.vPlayUserId'|trans }}</th>
+{% endblock %}
+
+{% block entryMoreFields2 %}
+	<td>{{ item.vPlayUserId }}</td>
+{% endblock %}

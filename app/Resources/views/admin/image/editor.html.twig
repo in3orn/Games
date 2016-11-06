@@ -1,0 +1,16 @@
+{% extends 'admin/simple/editor.html.twig' %}
+
+{%  block mainFields1 %}	
+    {{ form_row(form.name, { 'label': 'label.name' }) }}
+    
+    <div class="row">
+	    <div class="col-sm-3">
+			<img class="img-responsive" alt="{{ entry.name }}" src="{{ asset(entry.getImagePath()) }}" />
+		</div>
+		
+		<div class="col-sm-9">
+	    	{{ form_row(form.file, { 'label': 'label.image' }) }}
+	    </div>
+    </div>
+    
+{%  endblock %}

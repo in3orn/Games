@@ -1,0 +1,115 @@
+# App Routing
+app:
+    resource: "@AppBundle/Controller"
+    type:     annotation
+
+
+# Site Subscriptions Routing    
+site_subscription_new:
+    path:      /subscriptions/new/{gameId}/{userId}/{code}
+    defaults:  { _controller: "AppBundle:Site/Subscription:new" }
+    
+    
+# Admin Routing
+admin:
+    path:      /admin/
+    defaults:  { _controller: "AppBundle:Admin/Admin:index" }
+
+# Admin Games Routing    
+admin_game_show:
+    path:      /admin/games/show/{id}
+    defaults:  { _controller: "AppBundle:Admin/Game:show" }
+    
+admin_game_new:
+    path:      /admin/games/new
+    defaults:  { _controller: "AppBundle:Admin/Game:new" }
+    
+admin_game_copy:
+    path:      /admin/games/copy/{id}
+    defaults:  { _controller: "AppBundle:Admin/Game:copy" }
+    
+admin_game_edit:
+    path:      /admin/games/edit/{id}
+    defaults:  { _controller: "AppBundle:Admin/Game:edit" }
+    
+admin_game_delete:
+    path:      /admin/games/delete/{id}
+    defaults:  { _controller: "AppBundle:Admin/Game:delete" }
+    
+admin_game_delete_selected:
+    path:      /admin/games/deleteSelected
+    defaults:  { _controller: "AppBundle:Admin/Game:deleteSelected" }
+
+admin_game:
+    path:      /admin/games/{page}
+    defaults:  { _controller: "AppBundle:Admin/Game:index", page: 1 }
+
+
+
+# Admin Subscriptions Routing    
+admin_subscription_show:
+    path:      /admin/subscriptions/show/{id}
+    defaults:  { _controller: "AppBundle:Admin/Subscription:show" }
+    
+admin_subscription_new:
+    path:      /admin/subscriptions/new
+    defaults:  { _controller: "AppBundle:Admin/Subscription:new" }
+    
+admin_subscription_copy:
+    path:      /admin/subscriptions/copy/{id}
+    defaults:  { _controller: "AppBundle:Admin/Subscription:copy" }
+    
+admin_subscription_edit:
+    path:      /admin/subscriptions/edit/{id}
+    defaults:  { _controller: "AppBundle:Admin/Subscription:edit" }
+    
+admin_subscription_delete:
+    path:      /admin/subscriptions/delete/{id}
+    defaults:  { _controller: "AppBundle:Admin/Subscription:delete" }
+    
+admin_subscription_delete_selected:
+    path:      /admin/subscriptions/deleteSelected
+    defaults:  { _controller: "AppBundle:Admin/Subscription:deleteSelected" }
+
+admin_subscription:
+    path:      /admin/subscriptions/{page}
+    defaults:  { _controller: "AppBundle:Admin/Subscription:index", page: 1 }
+    
+    
+
+# Admin Users Routing    
+admin_user_show:
+    path:      /admin/users/show/{id}
+    defaults:  { _controller: "AppBundle:Admin/User:show" }
+    
+admin_user_new:
+    path:      /admin/users/new
+    defaults:  { _controller: "AppBundle:Admin/User:new" }
+    
+admin_user_copy:
+    path:      /admin/users/copy/{id}
+    defaults:  { _controller: "AppBundle:Admin/User:copy" }
+    
+admin_user_edit:
+    path:      /admin/users/edit/{id}
+    defaults:  { _controller: "AppBundle:Admin/User:edit" }
+    
+admin_user_delete:
+    path:      /admin/users/delete/{id}
+    defaults:  { _controller: "AppBundle:Admin/User:delete" }
+    
+admin_user_delete_selected:
+    path:      /admin/users/deleteSelected
+    defaults:  { _controller: "AppBundle:Admin/User:deleteSelected" }  
+    
+admin_user:
+    path:      /admin/users/{page}
+    defaults:  { _controller: "AppBundle:Admin/User:index", page: 1 }
+    
+admin_user_profile:
+    path:      /admin/profile
+    defaults:  { _controller: "AppBundle:Admin/User:profile" }
+
+# Friends of Symfony Routing    
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

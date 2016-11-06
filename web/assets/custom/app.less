@@ -1,0 +1,174 @@
+@import "variables.less";
+@import "images.less";
+
+@import "signin.less";
+
+@import "..\vendor\bootstrap\less\bootstrap.less";
+@icon-font-path: "../fonts/";
+
+@import "..\vendor\eonasdan-bootstrap-datetimepicker\src\less\_bootstrap-datetimepicker.less";
+
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: 768px) {
+	.text-sm-bottom {
+    	position: absolute;
+    	bottom: 0;
+    	right: 0;
+  	}
+  	
+  	.text-sm-left { text-align: left; }
+  	.text-sm-right { text-align: right; }
+  	.text-sm-center { text-align: center; }
+  	.text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: 992px) {
+	.text-md-bottom {
+    	position: absolute;
+    	bottom: 0;
+    	right: 0;
+  	}
+  
+  	.text-md-left { text-align: left; }
+  	.text-md-right { text-align: right; }
+  	.text-md-center { text-align: center; }
+  	.text-md-justify { text-align: justify; }
+}
+
+@media (min-width: 1200px) {
+	.text-lg-bottom {
+    	position: absolute;
+    	bottom: 0;
+    	right: 0;
+  	}
+  	
+  	.text-lg-left { text-align: left; }
+  	.text-lg-right { text-align: right; }
+  	.text-lg-center { text-align: center; }
+  	.text-lg-justify { text-align: justify; }
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .pull-right-sm {
+        float: right;
+    }
+}
+
+@media (min-width: 992px) {
+    .pull-right-md {
+        float: right;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+
+
+.table.vert-align > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.show-label {
+	color: @gray-light;
+	font-weight: bold;
+}
+
+.label-as-badge {
+	padding-left: 10px;
+	padding-right: 10px;
+	color: @white;
+	font-weight: bold;
+    border-radius: 1em;
+}
+
+.active > a > .label-as-badge,
+a.active > .label-as-badge,
+a:hover > .label-as-badge,
+a:focus > .label-as-badge {
+	background-color: @brand-warning;
+}
+
+
+body {
+	font-family: "Calibri", Sans-serif
+}
+
+.hr-space {
+	display:inline-block;
+	width: 10px;
+}
+
+.content {
+	margin-top: 75px;
+	margin-bottom: 20px;
+	min-height: 800px;
+}
+
+.welcome {
+    background-image: url('/img/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    
+    color: white;
+    
+    margin-top: 0px;
+	margin-bottom: 0px;
+	min-height: 955px;
+}
+
+.lowered {
+	margin-top: (@padding * 1px);
+}
+
+.footer {
+	height: 60px;
+  	text-align: center;
+  	color: white;
+  	background: @brand-primary;
+  	padding-bottom: (@padding * 4px);
+}
+
+.footer a {
+	color: @brand-warning;
+}
+
+
+.article h2 {
+	margin-top: 0px;
+}
+
+
+.list-header {
+	font-weight: bold;
+}
+
+.nav > li {
+	font-weight: bold;
+}
+
+.navbar-nav li a {
+    color: @brand-primary !important;
+}
+
+.navbar-nav li.active > a {
+    color: @brand-success !important;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+    color: @brand-warning !important;
+}

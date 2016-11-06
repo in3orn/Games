@@ -1,0 +1,16 @@
+{% extends 'admin/simple/editor.html.twig' %}
+
+{% set mainPath = '_subscription' %}
+{% set extPath = '_edit' %}
+
+{% set title = 'label.subscriptions'|trans %}
+
+
+{%  block moreFields1 %}
+	{{ form_row(form.vPlayUserId, { 'label': 'label.subscription.vPlayUserId'|trans }) }}
+{%  endblock %}
+
+{%  block moreFields2 %}
+	{{ form_row(form.user, { 'label': 'label.user'|trans }) }}
+	{{ form_row(form.game, { 'label': 'label.game'|trans }) }}
+{%  endblock %}

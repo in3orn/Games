@@ -97,3 +97,14 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+
+
+# KRPA (from yeoman / bower)
+# =========================
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components

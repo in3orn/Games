@@ -1,0 +1,141 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+	
+	{% block navigationBar %}
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				
+				{% block navigationHeader %}
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" 
+								data-toggle="collapse" 
+								data-target="#bs-example-navbar-collapse-1" 
+								aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+				      	</button>
+						<a class="navbar-brand" href="{{ path('site') }}">
+							<img alt="Brand" src="{{ asset('/img/logo.png') }}" height="25">
+						</a>
+			    	</div>
+		    	{% endblock %}
+		    	
+		    	{% block navigationList %}
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      			<ul class="nav navbar-nav navbar-right">
+							<li {% if mainPath == 'site_article' %} class="active" {% endif %}>
+								<a href="{{ path('site_article') }}">
+									<span class="txt-success fa fa-comments-o"></span> {{ 'title.articles'|trans }}
+								</a>
+							</li>
+							<li {% if mainPath == 'site_eucharist' %} class="active" {% endif %}>
+								<a href="{{ path('site_eucharist') }}">
+									<span class="txt-success fa fa-trophy"></span> {{ 'title.eucharists'|trans }}
+								</a>
+							</li>
+							<li {% if mainPath == 'site_liturgy' %} class="active" {% endif %}>
+								<a href="{{ path('site_liturgy') }}">
+									<span class="txt-success fa fa-quote-right"></span> {{ 'title.liturgies'|trans }}
+								</a>
+							</li>
+							<li {% if mainPath == 'site_subject' %} class="active" {% endif %}>
+								<a href="{{ path('site_subject') }}">
+									<span class="txt-success fa fa-book"></span> {{ 'title.subjects'|trans }}
+								</a>
+							</li>
+							<li {% if mainPath == 'site_song' %} class="active" {% endif %}>
+								<a href="{{ path('site_song') }}">
+									<span class="txt-success fa fa-music"></span> {{ 'title.songs'|trans }}
+								</a>
+							</li>
+							<li {% if mainPath == 'site_user' %} class="active" {% endif %} class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<span class="txt-success fa fa-user"></span> {{ app.user.username }} <span class="caret"></span>
+								</a>
+					          	<ul class="dropdown-menu">
+						            <li>
+						            	<a href="{{ path('site_user_show') }}">
+						            		<span class="fa fa-gears"></span> 
+						            		{{ 'title.profile'|trans }}
+					            		</a>
+					            	</li>
+					            	{% if is_granted('ROLE_RESPONSIBLE') and app.user.group %}
+							            <li>
+							            	<a href="{{ path('site_user') }}"><span class="fa fa-group"></span> {{ 'title.group'|trans }}</a>
+						            	</li>
+						            	<li>
+							            	<a href="{{ path('site_group_request', { receivers: app.user.id }) }}">
+							            		<span class="fa fa-envelope"></span> 
+							            		{{ 'title.requests_received'|trans }}
+							            		<span class="label-as-badge label-success">x</span>
+						            		</a>
+						            	</li>
+					            	{% endif %}
+					            	<li>
+						            	<a href="{{ path('site_group_request', { senders: app.user.id }) }}">
+						            		<span class="fa fa-mail-forward"></span> 
+				            				{{ 'title.requests_sent'|trans }}
+						            		<span class="label-as-badge label-success">x</span>
+					            		</a>
+					            	</li>
+					            	{% if is_granted('ROLE_ADMIN') and app.user.group %}
+						            	<li>
+						            		<a href="{{ path('admin') }}">
+						            			<span class="fa fa-dashboard"></span> 
+						            			{{ 'label.admin'|trans }}
+					            			</a>
+						            	</li>
+					            	{% endif %}
+					            	<li>
+					            		<a href="{{ path('fos_user_security_logout') }}">
+					            			<span class="fa fa-power-off"></span> 
+					            			{{ 'label.logout'|trans }}
+				            			</a>
+					            	</li>
+					          	</ul>
+					        </li>
+						</ul>
+					</div>
+				{% endblock %}
+		  	</div>
+		</nav>
+	{% endblock %}
+		
+	<div class="content">
+	{% block content %}
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-sm-push-9">
+				{% block sidebar %}
+					{% block userContent %}
+					{% endblock %}
+					
+					{% block sidebarContent %}
+					{% endblock %}
+				{% endblock %}
+				</div>
+				
+				<div class="col-sm-9 col-sm-pull-3">
+				{% block mainContent %}
+				{% endblock %}
+				</div>
+			</div>
+		</div>
+	{% endblock %}
+	</div>
+	
+	{% block footer %}
+		<div class="footer">
+	  		<div class="container-fluid">
+		    	<div class="col-lg-12">
+		      		<strong>&copy; 2016 KRK Developement</strong>
+		    	</div>
+		  	</div>
+		</div>
+	{% endblock %}
+{% endblock %}

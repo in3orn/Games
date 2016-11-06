@@ -1,0 +1,49 @@
+{% extends 'admin/simple/editor.html.twig' %}
+
+{% set mainPath = '_user' %}
+{% set extPath = '_profile' %}
+
+{% set title = 'label.profile'|trans %}
+
+{%  block mainFields1 %}	
+    {{ form_row(form.username, { 'label': 'label.name' }) }}
+{%  endblock %}
+
+{%  block moreFields1 %}
+	{{ form_row(form.code, { 'label': 'label.user.code' }) }}
+	
+	<div class="hidden">{{ form_row(form.roles, { 'label': 'label.user.roles'|trans }) }}</div>
+{%  endblock %}
+
+{% block actions %}
+	<div class="btn-group">
+	    {{ form_widget(form.save, { 'icon': 'fa-save', 'label': 'action.save', 'attr': {'class': 'btn btn-success'} }) }}
+    </div>
+{% endblock %}
+
+{% block assignments %}
+<div class="col-xs-12"><hr></div>
+
+<div class="container">
+	<table class="table table-striped">
+		<thead>
+			{% block tableHeader %}
+				<th><i class="fa fa-"></i>{{ 'label.game'|trans }}</th>
+				<th><i class="fa fa-"></i>{{ 'label.game.subscriptionsCount'|trans }}</th>
+			{% endblock %}
+		</thead>
+		<tbody>
+			{% block tableBody %}
+				{% for game in games %}
+				    <tr>
+				    	{% block tableEntry %}
+				    		<td>{{ game.name }}</td>
+				    		<td>{{ game.subscriptionsCount }}</td>
+		    			{% endblock %}
+	    			</tr>
+	    		{% endfor %}
+	    	{% endblock %}
+	    </tbody>
+	</table>
+</div>
+{% endblock %}

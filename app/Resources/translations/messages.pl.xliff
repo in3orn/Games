@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="pl" datatype="plaintext" original="file.ext">
+        <body>
+        	<trans-unit id="label.site">
+                <source>label.site</source>
+                <target>Neonkowo</target>
+            </trans-unit>
+            
+            <trans-unit id="label.website">
+                <source>label.website</source>
+                <target>www</target>
+            </trans-unit>
+            
+            
+            
+        	<trans-unit id="label.admin">
+                <source>label.admin</source>
+                <target>Panel administratora</target>
+            </trans-unit>
+            
+            <trans-unit id="label.welcome">
+                <source>label.welcome</source>
+                <target>Witaj</target>
+            </trans-unit>
+            <trans-unit id="label.logout">
+                <source>label.logout</source>
+                <target>wyloguj</target>
+            </trans-unit>
+            
+            <trans-unit id="label.noEntries">
+                <source>label.noEntries</source>
+                <target>Brak wyników.</target>
+            </trans-unit>
+            
+            
+            
+            <trans-unit id="label.games">
+                <source>label.games</source>
+                <target>Gry</target>
+            </trans-unit>
+            
+            <trans-unit id="label.game">
+                <source>label.game</source>
+                <target>Gra</target>
+            </trans-unit>
+            
+            <trans-unit id="label.game.vPlayId">
+                <source>label.game.vPlayId</source>
+                <target>V-Play ID</target>
+            </trans-unit>
+            
+            <trans-unit id="label.game.subscriptionsCount">
+                <source>label.game.subscriptionsCount</source>
+                <target>Liczba subskrypcji</target>
+            </trans-unit>
+            
+            
+            
+            <trans-unit id="label.subscriptions">
+                <source>label.subscriptions</source>
+                <target>Subskrypcje</target>
+            </trans-unit>
+            
+            <trans-unit id="label.subscription">
+                <source>label.subscription</source>
+                <target>Subskrypcja</target>
+            </trans-unit>
+            
+            <trans-unit id="label.subscription.vPlayUserId">
+                <source>label.subscription.vPlayUserId</source>
+                <target>V-Play ID gracza</target>
+            </trans-unit>
+            
+            
+            
+            
+            <trans-unit id="label.users">
+                <source>label.users</source>
+                <target>Użytkownicy</target>
+            </trans-unit>
+            
+            <trans-unit id="label.user">
+                <source>label.user</source>
+                <target>Użytkownik</target>
+            </trans-unit>
+            
+            <trans-unit id="label.user.email">
+                <source>label.user.email</source>
+                <target>E-mail</target>
+            </trans-unit>
+            <trans-unit id="label.user.roles">
+                <source>label.user.roles</source>
+                <target>Role</target>
+            </trans-unit>
+            <trans-unit id="label.user.code">
+                <source>label.user.code</source>
+                <target>Kod</target>
+            </trans-unit>
+            
+            <trans-unit id="label.profile">
+                <source>label.profile</source>
+                <target>Profil</target>
+            </trans-unit>
+            
+            
+            
+            
+            <trans-unit id="label.selected">
+                <source>label.selected</source>
+                <target>Wybrane</target>
+            </trans-unit>
+            <trans-unit id="label.name">
+                <source>label.name</source>
+                <target>Nazwa</target>
+            </trans-unit>
+            <trans-unit id="label.image">
+                <source>label.image</source>
+                <target>Obrazek</target>
+            </trans-unit>
+            <trans-unit id="label.createdAt">
+                <source>label.createdAt</source>
+                <target>Stworzony o</target>
+            </trans-unit>
+            <trans-unit id="label.createdBy">
+                <source>label.createdBy</source>
+                <target>Stworzony przez</target>
+            </trans-unit>
+            <trans-unit id="label.updatedAt">
+                <source>label.updatedAt</source>
+                <target>Edytowany o</target>
+            </trans-unit>
+            <trans-unit id="label.updatedBy">
+                <source>label.updatedBy</source>
+                <target>Edytowany przez</target>
+            </trans-unit>
+            <trans-unit id="label.actions">
+                <source>label.actions</source>
+                <target>Akcje</target>
+            </trans-unit>
+            <trans-unit id="label.readMore">
+                <source>label.readMore</source>
+                <target>Czytaj więcej...</target>
+            </trans-unit>
+            
+            
+            
+            
+            <trans-unit id="action.filter">
+                <source>action.filter</source>
+                <target>Filtr</target>
+            </trans-unit>
+            <trans-unit id="action.search">
+                <source>action.search</source>
+                <target>Szukaj</target>
+            </trans-unit>
+            <trans-unit id="action.clear">
+                <source>action.clear</source>
+                <target>Wyczyść</target>
+            </trans-unit>
+            
+            
+            <trans-unit id="action.new">
+                <source>action.new</source>
+                <target>Nowy</target>
+            </trans-unit>
+            <trans-unit id="action.selectAll">
+                <source>action.selectAll</source>
+                <target>Zaznacz wszystkie</target>
+            </trans-unit>
+            <trans-unit id="action.selectNone">
+                <source>action.selectNone</source>
+                <target>Odznacz wszystkie</target>
+            </trans-unit>
+            <trans-unit id="action.deleteSelected">
+                <source>action.deleteSelected</source>
+                <target>Usuń zaznaczone</target>
+            </trans-unit>
+            
+            
+            <trans-unit id="action.show">
+                <source>action.show</source>
+                <target>Pokaż</target>
+            </trans-unit>
+            <trans-unit id="action.edit">
+                <source>action.edit</source>
+                <target>Edytuj</target>
+            </trans-unit>
+            <trans-unit id="action.copy">
+                <source>action.copy</source>
+                <target>Kopiuj</target>
+            </trans-unit>
+            <trans-unit id="action.delete">
+                <source>action.delete</source>
+                <target>Usuń</target>
+            </trans-unit>
+            
+            
+            <trans-unit id="action.save">
+                <source>action.save</source>
+                <target>Zapisz</target>
+            </trans-unit>
+            <trans-unit id="action.saveAndNew">
+                <source>action.saveAndNew</source>
+                <target>Zapisz i nowy</target>
+            </trans-unit>
+            <trans-unit id="action.saveAndCopy">
+                <source>action.saveAndCopy</source>
+                <target>Zapisz i kopiuj</target>
+            </trans-unit>
+            <trans-unit id="action.saveAndQuit">
+                <source>action.saveAndQuit</source>
+                <target>Zapisz i wyjdź</target>
+            </trans-unit>
+            
+            
+            <trans-unit id="action.back">
+                <source>action.back</source>
+                <target>Wróć</target>
+            </trans-unit>
+            
+            <trans-unit id="action.accept">
+                <source>action.accept</source>
+                <target>Akceptuj</target>
+            </trans-unit>
+            
+            
+            
+            <trans-unit id="action.user.reset_password">
+                <source>action.user.change_password</source>
+                <target>Zmień hasło</target>
+            </trans-unit>
+            
+            <trans-unit id="action.user.send_request">
+                <source>action.user.send_request</source>
+                <target>Przypisz do grupy</target>
+            </trans-unit>
+            
+            
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,11 @@
+{% extends 'admin/simple/editor.html.twig' %}
+
+{% set mainPath = '_game' %}
+{% set extPath = '_edit' %}
+
+{% set title = 'label.games'|trans %}
+
+
+{%  block moreFields1 %}
+	{{ form_row(form.vPlayId, { 'label': 'label.game.vPlayId'|trans }) }}
+{%  endblock %}
